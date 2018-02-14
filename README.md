@@ -18,16 +18,16 @@ You can add frames to an animation either from a folder or from a SpriteSheet (s
 This class represents a sprite sheet. A sprite sheet is a sheet of paper with many little images that are all part of a single animation. This is how graphics for 2d games are usually packaged. This class allows easily extracting certain frames from a sprite sheet.
 
 ### Animation
-This class is very similar to Sprite, and serves the same purpose, except it reprsents a *single* animation. My eventual goal is to reimplement Sprite to use a bunch of Animation objects.
+This class is very similar to Sprite, and serves the same purpose, except it represents a *single* animation. My eventual goal is to reimplement Sprite to use a bunch of Animation objects.
 
 ### PlayingAnimationInfo
 A *very* simple class that represents some information about a currently playing animation such as its name, frames per second, etc...
 
 ### EntitySprite
-This is an abstract class that basically defines the interface an Entity (another class that is part of my game engine - an Entity is basically anything that can go in a Map) from something that can "visualize" it. Concrete EntitySprites need to provide functionality such as setFacingAngle(), playAnimation("run"), etc...
+This is an abstract class that basically defines the interface an Entity (another class that is part of my game engine - an Entity is basically anything that can go in a Map) expects from something that can "visualize" it. Concrete EntitySprites need to provide functionality such as setFacingAngle(), playAnimation("run"), etc...
 
 ### TopDownSprite
-A concrete EntitySprite that makes it very easy to create animation from top down graphics.
+A concrete EntitySprite that makes it very easy to create animation from "top down" graphics.
 
 ### AngledSprite
 A concrete EntitySprite that makes it very easy to create animations from "angled" graphics (anythin that isn't purely top down basically).
