@@ -6,9 +6,7 @@ Overview
 ========
 I have selected a few classes from my Qt Game Engine project to show off :). I tend to create one .h and one .cpp file for each class. The name of the file is the same as the name of the class.
 
-Here is a high level explanation of the classes I have chosen:
-
-Note: Please look at the code in this order, I think that would make the most sense to you.
+Here is a brief description of the classes I have chosen (check out the ones that sound interesting to you):
 
 ### Sprite
 This class represents a set of named animations that you can play via a play() method. 
@@ -32,4 +30,12 @@ A concrete EntitySprite that makes it very easy to create animation from top dow
 ### AngledSprite
 A concrete EntitySprite that makes it very easy to create animations from "angled" graphics (anythin that isn't purely top down basically).
 
+### Graph
+This class represents a graph (set of nodes and edges). The most notable function it has is shortestPath() which finds the shortest path between two nodes using the A* algorithm.
+
+### Tree
+This class represents a tree.
+
+### PathingMap
+This is a really cool class. It represents a region of 2d space that is basically a grid of cells. Each cell can be filled or empty. It has a function for finding the shortest path between two cells (avoiding filled cells obviously). It also has a function for "adding" two PathingMaps together, etc...I use this class heavily in my game engine.
 
